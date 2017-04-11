@@ -1,6 +1,7 @@
 {
     "name": "xiranst/media-bundle",
     "type": "symfony-bundle",
+    "language": "PHP"
     "description": "Help your application to upload file easier.",
     "keywords": [ "upload image", "upload file", "upload media", "imagine", "image", "manipulation", "pictures", "photos", "transformation", "bundle", "symfony", "xiranst" ],
     "homepage": "http://www.xiranst.com",
