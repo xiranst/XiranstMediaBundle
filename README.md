@@ -20,3 +20,16 @@ $ composer require xiranst/media-bundle:dev-master
             new Xiranst\Bundle\MediaBundle\XirantMediaBundle(),
         );
     }
+    
+```
+the default directory of uploaded files is 
+ ```
+    %kernel.root_dir%/../web/media
+```
+
+if you need to change this path, please add this configuration in config.yml
+
+```
+xiranst_media:
+    upload_directory: '%kernel.root_dir%/../web/media'
+```
