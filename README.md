@@ -16,9 +16,5 @@ Help your application to upload file easier.
 	
 	            new Xiranst\Bundle\MediaBundle\XiranstMediaBundle(),
 	        );
-	
-	        // ...
 	    }
-	
-	    // ...
 	}
