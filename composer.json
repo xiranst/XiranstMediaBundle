@@ -12,14 +12,20 @@
             "homepage": "https://github.com/xiranst/XiranstMediaBundle/graphs/contributors"
         }
     ],
+    "require": {
+        "php":             ">=5.4.0",
+        "symfony/symfony": ">=3.0"
+    },
     "autoload": {
-        "psr-4": {
-            "Xiranst\\MediaBundle\\": ""
+        "psr-0": {
+            "Xiranst\\Bundle\\MediaBundle": ""
         }
     },
-    "minimum-stability": "stable",
-    "require": {
-        "php": "^5.3.9|^7.0",
-        "symfony/symfony": "~2.3|~3.0"
+    "target-dir" : "Xiranst/Bundle/MediaBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev",
+            "dev-stable": "1.0"
+        }
     }
 }
