@@ -1,20 +1,22 @@
 # XiranstMediaBundle
 Help your application to upload file easier.
 
-Usage
+### Add XirantMediaBundle as a dependency of your application via composer
 
-	composer require xiranst/media-bundle:dev-master
+```
+$ composer require xiranst/media-bundle:dev-master
+```
 
-app/AppKernel.php
+### Add XirantMediaBundle to your application kernel.
 
-	class AppKernel extends Kernel
-	{
-	    public function registerBundles()
-	    {
-	        $bundles = array(
-	            // ...
-	
-	            new Xiranst\Bundle\MediaBundle\XiranstMediaBundle(),
-	        );
-	    }
-	}
+```php
+// app/AppKernel.php
+<?php
+    // ...
+    public function registerBundles()
+    {
+        $bundles = array(
+            // ...
+            new Xiranst\Bundle\MediaBundle\XirantMediaBundle(),
+        );
+    }
