@@ -8,22 +8,26 @@
 
 namespace Xiranst\Bundle\MediaBundle\Service;
 
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class UploadService
 {
+    private $container;
     private $targetDir;
     private $fileSystem;
 
-    public function __construct($targetDir)
+    public function __construct(ContainerInterface $container)
     {
-        $this->targetDir = $targetDir;
+        $this->container    = $container;
         $this->fileSystem = new Filesystem();
     }
 
     public function upload(UploadedFile $file)
     {
+        $this->targetDir = $this->container->getParameter('xiranst_media.upload_directory');
+        dump($this->targetDir);exit();
         $newName = md5(uniqid()) . '.' . $file->getClientOriginalExtension();
         $mimeType = $file->getClientMimeType();
         $originalName = $file->getClientOriginalName();

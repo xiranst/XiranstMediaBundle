@@ -1,7 +1,3 @@
-parameters:
-    uploader_directory: '%kernel.root_dir%/../web/uploads/media'
-    media_domain: 'http://img.xzhiwu.com/uploads/'
-
 services:
     xiranst_media.upload_event_listener:
         class: Xiranst\Bundle\MediaBundle\EventListener\UploadEventListener
@@ -10,7 +6,7 @@ services:
             - { name: kernel.event_listener, event: xiranst_media.post_upload, method: onUpload }
     xiranst_media.upload_service:
         class: Xiranst\Bundle\MediaBundle\Service\UploadService
-        arguments: ['%uploader_directory%']
+        arguments: ["@service_container"]
 
     xiranst_media.form_thumbnail_type:
         class: Xiranst\Bundle\MediaBundle\Form\ThumbnailType
