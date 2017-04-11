@@ -17,6 +17,7 @@
             "Xiranst\\MediaBundle\\": ""
         }
     },
+    "minimum-stability": "1.0",
     "require": {
         "php": "^5.3.9|^7.0",
         "symfony/symfony": "~2.3|~3.0"
