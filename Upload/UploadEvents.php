@@ -6,7 +6,7 @@
  * Time: 11:28 PM
  */
 
-namespace Xiranst\Bundle\MediaBundle\Upload\Events;
+namespace Xiranst\Bundle\MediaBundle\Upload;
 
 
 final class UploadEvents

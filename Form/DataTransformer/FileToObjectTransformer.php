@@ -6,7 +6,7 @@
  * Time: 2:13 PM
  */
 
-namespace Xiranst\Bundle\MediaBundle\Upload\Form\DataTransformer;
+namespace Xiranst\Bundle\MediaBundle\Form\DataTransformer;
 
 use Symfony\Component\Form\DataTransformerInterface;
 use Symfony\Component\HttpFoundation\File\File;

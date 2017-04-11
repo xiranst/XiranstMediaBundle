@@ -9,11 +9,11 @@ services:
         tags:
             - { name: kernel.event_listener, event: xiranst_media.post_upload, method: onUpload }
     xiranst_media.upload_service:
-        class: Xiranst\Bundle\MediaBundle\Upload\Service\UploadService
+        class: Xiranst\Bundle\MediaBundle\Service\UploadService
         arguments: ['%uploader_directory%']
 
     xiranst_media.form_thumbnail_type:
-        class: Xiranst\Bundle\MediaBundle\Upload\Form\ThumbnailType
+        class: Xiranst\Bundle\MediaBundle\Form\ThumbnailType
         arguments: ["@xiranst_media.upload_service"]
         tags:
             - { name: form.type }

@@ -12,7 +12,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
-use Xiranst\Bundle\MediaBundle\Upload\Service\UploadService;
+use Xiranst\Bundle\MediaBundle\Service\UploadService;
 
 class ThumbnailEventSubscriber implements EventSubscriberInterface
 {

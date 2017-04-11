@@ -6,7 +6,7 @@
  * Time: 1:31 AM
  */
 
-namespace Xiranst\Bundle\MediaBundle\Upload\Service;
+namespace Xiranst\Bundle\MediaBundle\Service;
 
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\File\UploadedFile;

@@ -6,7 +6,7 @@
  * Time: 1:19 PM
  */
 
-namespace Xiranst\Bundle\MediaBundle\Upload\Form;
+namespace Xiranst\Bundle\MediaBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
@@ -15,8 +15,8 @@ use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Xiranst\Bundle\MediaBundle\EventSubscriber\ThumbnailEventSubscriber;
-use Xiranst\Bundle\MediaBundle\Upload\Form\DataTransformer\FileToObjectTransformer;
-use Xiranst\Bundle\MediaBundle\Upload\Service\UploadService;
+use Xiranst\Bundle\MediaBundle\Form\DataTransformer\FileToObjectTransformer;
+use Xiranst\Bundle\MediaBundle\Service\UploadService;
 
 class ThumbnailType extends AbstractType
 {
