@@ -14,8 +14,7 @@
     "autoload": {
         "psr-4": {
             "Xiranst\\MediaBundle\\": ""
-        },
-        "exclude-from-classmap": [ "/Tests/" ]
+        }
     },
     "require": {
         "php": "^5.3.9|^7.0",
@@ -56,14 +55,5 @@
         "league/flysystem": "required to use FlySystem data loader or cache resolver",
         "monolog/monolog": "A psr/log compatible logger is required to enable logging",
         "twig/twig": "required to use the provided Twig extension. Version 1.12 or greater needed"
-    },
-    "config": {
-        "bin-dir": "bin",
-        "sort-packages": true
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-1.0": "1.0-dev"
-        }
     }
 }
