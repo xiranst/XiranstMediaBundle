@@ -59,7 +59,7 @@ Please make the permission of web/uploads/media directory is 0777;
 If you need to change this path, please add this configuration in config.yml
 
 ```yaml
-// config.yml
+// app/config/config.yml
 xiranst_media:
-	upload_directory: '%kernel.root_dir%/../your-directory/'
+    upload_directory: '%kernel.root_dir%/../your-directory/'
 ```
