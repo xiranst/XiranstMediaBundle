@@ -15,5 +15,9 @@
         "psr-4": {
             "Xiranst\\MediaBundle\\": ""
         }
-    }
+    },
+    "require": {
+        "php": "^5.3.9|^7.0",
+        "symfony/symfony": "~2.3|~3.0"
+    },
 }
