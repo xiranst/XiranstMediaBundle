@@ -1,11 +1,11 @@
 # XiranstMediaBundle
 Help your application to upload file easier.
 
-###Usage
+Usage
 
 	composer require xiranst/media-bundle:dev-master
 
-// app/AppKernel.php
+app/AppKernel.php
 
 	class AppKernel extends Kernel
 	{
