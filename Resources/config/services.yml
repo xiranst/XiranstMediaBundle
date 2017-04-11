@@ -1,0 +1,19 @@
+parameters:
+    uploader_directory: '%kernel.root_dir%/../web/uploads/media'
+    media_domain: 'http://img.xzhiwu.com/uploads/'
+
+services:
+    xiranst_media.upload_event_listener:
+        class: Xiranst\Bundle\MediaBundle\EventListener\UploadEventListener
+        arguments: ["@doctrine.orm.entity_manager", "@xiranst_media.upload_service"]
+        tags:
+            - { name: kernel.event_listener, event: xiranst_media.post_upload, method: onUpload }
+    xiranst_media.upload_service:
+        class: Xiranst\Bundle\MediaBundle\Upload\Service\UploadService
+        arguments: ['%uploader_directory%']
+
+    xiranst_media.form_thumbnail_type:
+        class: Xiranst\Bundle\MediaBundle\Upload\Form\ThumbnailType
+        arguments: ["@xiranst_media.upload_service"]
+        tags:
+            - { name: form.type }

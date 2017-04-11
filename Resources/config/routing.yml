@@ -1,0 +1,3 @@
+xiranst_media_homepage:
+    path:     /
+    defaults: { _controller: XiranstMediaBundle:Default:index }
