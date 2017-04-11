@@ -3,7 +3,7 @@ Help your application to upload file easier.
 
 #### 1, Installation with composer
 
-```
+```shell
 $ composer require xiranst/media-bundle:dev-master
 ```
 
@@ -24,7 +24,7 @@ $ composer require xiranst/media-bundle:dev-master
 ```
 #### 3, Usage in Form Type
 
-```
+```php
 <?php 
 // src/Xiranst/Bundle/DemoBundle/Form/YourFormType.php
 
@@ -50,7 +50,7 @@ class YourFormType extends AbstractType
 
 Default directory is:
 
-```
+```yaml
 %kernel.root_dir%/../web/uploads/media
 ```
 
@@ -58,6 +58,8 @@ Please make the permission of web/uploads/media directory is 0777;
 
 If you need to change this path, please add this configuration in config.yml
 
-    // config.yml
-    xiranst_media:
-    	upload_directory: '%kernel.root_dir%/../your-directory/'
+```yaml
+// config.yml
+xiranst_media:
+	upload_directory: '%kernel.root_dir%/../your-directory/'
+```
