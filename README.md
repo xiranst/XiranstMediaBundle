@@ -61,4 +61,4 @@ If you need to change this path, please add this configuration in config.yml
 
     // config.yml
     xiranst_media:
-    	upload_directory: '%kernel.root_dir%/../web/media'
+    	upload_directory: '%kernel.root_dir%/../your-directory/'
