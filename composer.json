@@ -21,7 +21,6 @@
             "Xiranst\\Bundle\\MediaBundle": ""
         }
     },
-    "target-dir" : "Xiranst/Bundle/MediaBundle",
     "extra": {
         "branch-alias": {
             "dev-master": "2.x-dev",
