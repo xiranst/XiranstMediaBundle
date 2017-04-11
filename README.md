@@ -49,13 +49,15 @@ class YourFormType extends AbstractType
 
 #### 4, Options: Configure the upload directory in config.yml
 
-default directory is:
+Default directory is:
 
 ```
 %kernel.root_dir%/../web/uploads/media
 ```
 
-if you need to change this path, please add this configuration in config.yml
+Please make the permission of web/uploads/media directory is 0777;
+
+If you need to change this path, please add this configuration in config.yml
 
     // config.yml
     xiranst_media:
