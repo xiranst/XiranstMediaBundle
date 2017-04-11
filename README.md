@@ -1,13 +1,13 @@
 # XiranstMediaBundle
 Help your application to upload file easier.
 
-### Add XirantMediaBundle as a dependency of your application via composer
+#### 1, Installation with composer
 
 ```
 $ composer require xiranst/media-bundle:dev-master
 ```
 
-### Add XirantMediaBundle to your application kernel.
+#### 2, Enable in AppKernel.php
 
 ```php
 // app/AppKernel.php
@@ -22,8 +22,39 @@ $ composer require xiranst/media-bundle:dev-master
     }
     
 ```
-the default directory of uploaded files is 
-    %kernel.root_dir%/../web/media
+#### 3, Usage in Form Type
+
+```
+// src/Xiranst/Bundle/DemoBundle/Form/YourFormType.php
+
+namespace Xiranst\Bundle\DemoBundle\Form;
+
+use Xiranst\Bundle\MediaBundle\Form\ThumbnailType;
+class YourFormType extends AbstractType
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function buildForm(FormBuilderInterface $builder, array $options)
+    {
+	    // ...
+        $builder->add('thumbnail', ThumbnailType::class, array(
+            'required' => false
+        ));
+        // ...
+    }
+    // ...
+}
+```
+
+#### 4, Options: Configure the upload directory in config.yml
+
+default directory is:
+
+```
+%kernel.root_dir%/../web/uploads/media
+```
+
 if you need to change this path, please add this configuration in config.yml
 
     // config.yml
