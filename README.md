@@ -25,6 +25,7 @@ $ composer require xiranst/media-bundle:dev-master
 #### 3, Usage in Form Type
 
 ```
+<?php 
 // src/Xiranst/Bundle/DemoBundle/Form/YourFormType.php
 
 namespace Xiranst\Bundle\DemoBundle\Form;
