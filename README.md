@@ -17,7 +17,7 @@ $ composer require xiranst/media-bundle:dev-master
     {
         $bundles = array(
             // ...
-            new Xiranst\Bundle\MediaBundle\XirantMediaBundle(),
+            new Xiranst\Bundle\MediaBundle\XiranstMediaBundle(),
         );
     }
     
