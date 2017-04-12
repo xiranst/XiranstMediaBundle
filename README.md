@@ -46,7 +46,8 @@ class YourFormType extends AbstractType
 }
 ```
 
-#### 4, Options: Configure the upload directory in config.yml
+#### 4, Options
+a, Configure the upload directory in config.yml
 
 Default directory is:
 
@@ -62,4 +63,8 @@ If you need to change this path, please add this configuration in config.yml
 // app/config/config.yml
 xiranst_media:
     upload_directory: '%kernel.root_dir%/../your-directory/'
+```
+b, if the file has uploaded and you want to display it in the form template, you can use this code:
+```
+{{ form.vars.data.thumbnail }}
 ```
